@@ -8,8 +8,6 @@ Digital Wardrobe is a wardrobe management application that helps users organize 
 
 Users can photograph their clothing items, categorize them, and use an interactive avatar-based canvas to mix and match items visually. This makes outfit planning more intuitive and helps maximize the use of existing wardrobe pieces.
 
-**Academic Context**: This project was developed as a final assignment for a Mobile Development university course, demonstrating practical application of mobile app development concepts including state management, API integration, gesture-based interfaces, and media handling.
-
 ## Core Features
 
 ### Authentication
@@ -346,4 +344,4 @@ This project showcases the integration of multiple mobile development concepts i
 
 ## License
 
-This project is developed for educational purposes as part of a university course assignment.
+This project is developed for educational purposes
