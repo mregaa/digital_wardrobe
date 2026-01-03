@@ -1,223 +1,229 @@
 # Digital Wardrobe
 
-A Flutter mobile application for managing personal clothing items and creating outfit combinations through an interactive visual canvas.
+Aplikasi mobile Flutter untuk mengelola koleksi pakaian pribadi dan membuat kombinasi outfit melalui canvas visual interaktif.
 
-## Project Overview
+## Developer
 
-Digital Wardrobe is a wardrobe management application that helps users organize their clothing collection and experiment with different outfit combinations. The app addresses the common problem of managing a growing wardrobe and visualizing how different pieces work together before actually wearing them.
+Nama    : Muhamad Rega Pramudya
+NIM     : 1202223378
+Kelas   : SI-46-EISD2 (Pengembangan Aplikasi Bergerak)
 
-Users can photograph their clothing items, categorize them, and use an interactive avatar-based canvas to mix and match items visually. This makes outfit planning more intuitive and helps maximize the use of existing wardrobe pieces.
+## Ringkasan Proyek
 
-## Core Features
+Digital Wardrobe adalah aplikasi pengelolaan lemari pakaian yang membantu pengguna mengorganisir koleksi pakaian mereka dan bereksperimen dengan berbagai kombinasi outfit. Aplikasi ini mengatasi masalah umum dalam mengelola lemari pakaian yang terus bertambah dan memvisualisasikan bagaimana berbagai item pakaian dapat dipadukan sebelum benar-benar mengenakannya.
 
-### Authentication
-- User registration and login system
-- Secure session management
-- Profile management with user statistics
+Pengguna dapat memfoto item pakaian mereka, mengkategorikannya, dan menggunakan canvas interaktif berbasis avatar untuk mencampur dan mencocokkan item secara visual. Ini membuat perencanaan outfit lebih intuitif dan membantu memaksimalkan penggunaan pakaian yang sudah dimiliki.
 
-### Wardrobe Management
-- **Add Clothing Items**:
-  - Select images from device gallery
-  - Capture photos directly using device camera
-  - Real-time image preview before submission
-  - Option to use background removal tools for cleaner images
-  - Categorize items (tops, bottoms, outerwear, shoes, accessories)
-  - Add metadata: name, color, and optional notes
-  - Support for transparent PNG images
+## Fitur Utama
 
-- **Browse Outfits**:
-  - Grid view of all clothing items
-  - Category-based filtering
-  - Search functionality by name
-  - Favorites filter to view saved items
-  - Quick access to outfit details
+### Autentikasi
+- Sistem registrasi dan login pengguna
+- Manajemen sesi yang aman
+- Manajemen profil dengan statistik pengguna
 
-- **Outfit Details**:
-  - Full-screen outfit viewing
-  - Edit existing outfits
-  - Delete unwanted items
-  - Mark items as favorites
+### Manajemen Lemari Pakaian
+- **Tambah Item Pakaian**:
+  - Pilih gambar dari galeri perangkat
+  - Ambil foto langsung menggunakan kamera perangkat
+  - Preview gambar real-time sebelum submit
+  - Opsi untuk menggunakan tools penghapus latar belakang untuk gambar lebih bersih
+  - Kategorisasi item (atasan, bawahan, outerwear, sepatu, aksesoris)
+  - Tambahkan metadata: nama, warna, dan catatan opsional
+  - Dukungan untuk gambar PNG transparan
 
-- **Favorites System**:
-  - Toggle favorite status on any outfit
-  - Dedicated favorites screen
-  - Persistent favorite state across sessions
+- **Jelajahi Outfit**:
+  - Tampilan grid untuk semua item pakaian
+  - Filter berbasis kategori
+  - Fungsi pencarian berdasarkan nama
+  - Filter favorit untuk melihat item tersimpan
+  - Akses cepat ke detail outfit
+
+- **Detail Outfit**:
+  - Tampilan outfit layar penuh
+  - Edit outfit yang ada
+  - Hapus item yang tidak diinginkan
+  - Tandai item sebagai favorit
+
+- **Sistem Favorit**:
+  - Toggle status favorit pada outfit apa pun
+  - Layar favorit khusus
+  - Status favorit persisten di seluruh sesi
 
 ### Avatar Outfit Builder (Mix & Match)
-The centerpiece feature allowing visual outfit composition:
+Fitur utama yang memungkinkan komposisi outfit visual:
 
-- **Interactive Canvas**:
-  - Clean 2D canvas with grid background
-  - Avatar silhouette as a sizing reference
-  - Full-screen workspace for outfit building
+- **Canvas Interaktif**:
+  - Canvas 2D bersih dengan latar belakang grid
+  - Siluet avatar sebagai referensi ukuran
+  - Workspace layar penuh untuk membangun outfit
 
 - **Drag and Drop**:
-  - Long-press clothing items from library
-  - Drag items onto canvas
-  - Visual feedback during dragging
+  - Tekan lama item pakaian dari library
+  - Seret item ke canvas
+  - Feedback visual selama menyeret
 
-- **Multi-Touch Gestures**:
-  - Move items by dragging
-  - Pinch to scale items up or down
-  - Two-finger rotation for angle adjustment
-  - Smooth, responsive gesture handling
+- **Gesture Multi-Touch**:
+  - Gerakkan item dengan drag
+  - Pinch untuk memperbesar atau memperkecil item
+  - Rotasi dua jari untuk penyesuaian sudut
+  - Penanganan gesture yang halus dan responsif
 
-- **Canvas Controls**:
-  - Tap items to bring to front (z-order management)
-  - Remove individual items
-  - Clear entire canvas
-  - Save combinations with custom names
+- **Kontrol Canvas**:
+  - Tap item untuk membawa ke depan (manajemen z-order)
+  - Hapus item individual
+  - Bersihkan seluruh canvas
+  - Simpan kombinasi dengan nama kustom
 
-- **Expandable Library**:
-  - Collapsible outfit library at bottom
-  - Category filters (All, tops, bottoms, outerwear, shoes, accessories)
-  - Smooth expand/collapse animation
-  - Grid layout for easy browsing
+- **Library yang Dapat Diperluas**:
+  - Library outfit yang dapat dilipat di bagian bawah
+  - Filter kategori (Semua, atasan, bawahan, outerwear, sepatu, aksesoris)
+  - Animasi expand/collapse yang halus
+  - Tata letak grid untuk browsing mudah
 
-### User Interface
-- Material Design 3 theming
-- Responsive layouts for different screen sizes
-- Bottom navigation for main sections
-- Intuitive icons and visual feedback
-- Error states with helpful messages
-- Loading indicators during operations
+### Antarmuka Pengguna
+- Tema Material Design 3
+- Tata letak responsif untuk berbagai ukuran layar
+- Navigasi bawah untuk bagian utama
+- Ikon intuitif dan feedback visual
+- State error dengan pesan membantu
+- Indikator loading selama operasi
 
-## Technical Highlights
+## Highlight Teknis
 
 ### State Management
-- **Provider pattern** for application-wide state
-- Separated providers for different concerns:
-  - Authentication state
-  - Outfit list management
-  - Favorites management
-  - Mix & Match canvas state
-  - Outfit form handling
-- Efficient UI updates using ChangeNotifier
+- **Pola Provider** untuk state aplikasi-wide
+- Provider terpisah untuk berbagai keperluan:
+  - State autentikasi
+  - Manajemen daftar outfit
+  - Manajemen favorit
+  - State canvas Mix & Match
+  - Penanganan form outfit
+- Update UI efisien menggunakan ChangeNotifier
 
-### API Integration
-- RESTful API communication using Dio HTTP client
-- Multipart form data for image uploads
-- Safe error handling with type-checked responses
-- Image URL normalization for relative paths
-- Automatic token management for authenticated requests
+### Integrasi API
+- Komunikasi RESTful API menggunakan Dio HTTP client
+- Multipart form data untuk upload gambar
+- Penanganan error aman dengan respons yang di-type-check
+- Normalisasi URL gambar untuk path relatif
+- Manajemen token otomatis untuk request terautentikasi
 
-### Media Handling
-- Integration with device camera via image_picker
-- Gallery image selection
-- File preview before upload
-- Support for PNG transparency
-- Image rendering optimization (anti-aliasing, quality filtering)
+### Penanganan Media
+- Integrasi dengan kamera perangkat via image_picker
+- Pemilihan gambar galeri
+- Preview file sebelum upload
+- Dukungan untuk transparansi PNG
+- Optimasi rendering gambar (anti-aliasing, quality filtering)
 
-### Gesture System
-- Custom multi-touch gesture handling
-- Stable transform calculations (position, scale, rotation)
-- Scale clamping for usability (0.2x to 4.0x)
-- Gesture state management for smooth interactions
+### Sistem Gesture
+- Penanganan gesture multi-touch kustom
+- Kalkulasi transformasi stabil (posisi, skala, rotasi)
+- Clamping skala untuk usability (0.2x hingga 4.0x)
+- Manajemen state gesture untuk interaksi halus
 
-### Data Safety
-- Safe enum parsing with fallback values
-- Null-safe implementation throughout
-- Comprehensive error handling
-- Type validation for API responses
+### Keamanan Data
+- Parsing enum aman dengan nilai fallback
+- Implementasi null-safe menyeluruh
+- Penanganan error komprehensif
+- Validasi tipe untuk respons API
 
-### Cross-Platform Considerations
-- Android-specific permission handling (camera)
-- Intent queries for URL launching
-- Platform-aware UI components
-- Responsive layouts
+### Pertimbangan Cross-Platform
+- Penanganan permission spesifik Android (kamera)
+- Intent queries untuk URL launching
+- Komponen UI platform-aware
+- Tata letak responsif
 
-## Technologies Used
+## Teknologi yang Digunakan
 
 ### Frontend
-- **Flutter SDK** - Cross-platform mobile framework
-- **Dart** - Programming language
+- **Flutter SDK** - Framework mobile cross-platform
+- **Dart** - Bahasa pemrograman
 - **Provider** (^6.0.0) - State management
-- **Material Design 3** - UI design system
+- **Material Design 3** - Sistem desain UI
 
 ### Networking
-- **Dio** - HTTP client for API communication
-- **Multipart uploads** - Image file transmission
+- **Dio** - HTTP client untuk komunikasi API
+- **Multipart uploads** - Transmisi file gambar
 
 ### Media & Utilities
-- **image_picker** (^1.1.2) - Camera and gallery access
-- **url_launcher** (^6.3.1) - External URL handling
+- **image_picker** (^1.1.2) - Akses kamera dan galeri
+- **url_launcher** (^6.3.1) - Penanganan URL eksternal
 
 ### Backend
-- REST API (FastAPI-style architecture)
-- JSON data format
-- Token-based authentication
-- File storage for uploaded images
+- REST API (arsitektur FastAPI-style)
+- Format data JSON
+- Autentikasi berbasis token
+- Penyimpanan file untuk gambar yang diupload
 
-## Application Structure
+## Struktur Aplikasi
 
-### Main Screens
+### Layar Utama
 
-1. **Login Screen**
-   - Email and password authentication
-   - Navigation to registration
-   - Automatic redirect on successful login
+1. **Layar Login**
+   - Autentikasi email dan password
+   - Navigasi ke registrasi
+   - Redirect otomatis pada login berhasil
 
-2. **Home Screen**
-   - Recent outfits overview
-   - Quick access to main features
+2. **Layar Home**
+   - Ringkasan outfit terbaru
+   - Akses cepat ke fitur utama
    - Bottom navigation bar
 
-3. **Outfit List Screen**
-   - Grid display of all outfits
-   - Category filter chips
-   - Search bar for quick finding
-   - Favorites toggle button
-   - Navigation to outfit details
+3. **Layar Daftar Outfit**
+   - Tampilan grid semua outfit
+   - Chip filter kategori
+   - Search bar untuk pencarian cepat
+   - Tombol toggle favorit
+   - Navigasi ke detail outfit
 
-4. **Add Outfit Screen**
-   - Image selection (gallery/camera)
-   - Form fields for outfit details
-   - Category dropdown selection
-   - Background remover tip dialog
-   - Image preview with white background for transparency
+4. **Layar Tambah Outfit**
+   - Pemilihan gambar (galeri/kamera)
+   - Form field untuk detail outfit
+   - Dropdown pemilihan kategori
+   - Dialog tip penghapus latar belakang
+   - Preview gambar dengan latar belakang putih untuk transparansi
 
-5. **Edit Outfit Screen**
-   - Similar to add screen
-   - Pre-filled with existing data
-   - Shows current outfit image
-   - Option to change image
+5. **Layar Edit Outfit**
+   - Mirip dengan layar tambah
+   - Sudah terisi dengan data yang ada
+   - Menampilkan gambar outfit saat ini
+   - Opsi untuk mengganti gambar
 
-6. **Outfit Detail Screen**
-   - Full-screen image display
-   - Complete outfit information
-   - Edit and delete options
-   - Favorite toggle button
+6. **Layar Detail Outfit**
+   - Tampilan gambar layar penuh
+   - Informasi outfit lengkap
+   - Opsi edit dan hapus
+   - Tombol toggle favorit
 
-7. **Favorites Screen**
-   - Grid view of favorited items
-   - Remove from favorites option
-   - Direct navigation to outfit details
+7. **Layar Favorit**
+   - Tampilan grid item favorit
+   - Opsi hapus dari favorit
+   - Navigasi langsung ke detail outfit
 
-8. **Mix & Match Screen**
-   - Canvas workspace with grid
-   - Avatar silhouette guide
-   - Expandable library at bottom
-   - Category filters
-   - Save combination button
-   - Clear canvas option
+8. **Layar Mix & Match**
+   - Canvas workspace dengan grid
+   - Panduan siluet avatar
+   - Library yang dapat diperluas di bawah
+   - Filter kategori
+   - Tombol simpan kombinasi
+   - Opsi bersihkan canvas
 
-9. **Profile Screen**
-   - User information display
-   - Statistics (outfit count, favorites count, combos count)
-   - Tappable stats that navigate to respective screens
-   - Settings and logout options
+9. **Layar Profil**
+   - Tampilan informasi pengguna
+   - Statistik (jumlah outfit, jumlah favorit, jumlah combo)
+   - Statistik yang dapat di-tap untuk navigasi ke layar terkait
+   - Opsi pengaturan dan logout
 
-## How to Run the App
+## Cara Menjalankan Aplikasi
 
-### Prerequisites
-- Flutter SDK (3.0.0 or higher)
-- Android Studio / VS Code with Flutter extensions
-- Android device or emulator (for Android testing)
-- Web browser (for web testing)
+### Prasyarat
+- Flutter SDK (3.0.0 atau lebih tinggi)
+- Android Studio / VS Code dengan ekstensi Flutter
+- Perangkat atau emulator Android (untuk testing Android)
+- Web browser (untuk testing web)
 
-### Setup Steps
+### Langkah Setup
 
-1. **Clone the repository**
+1. **Clone repository**
    ```bash
    git clone <repository-url>
    cd digital_wardrobe
@@ -228,120 +234,120 @@ The centerpiece feature allowing visual outfit composition:
    flutter pub get
    ```
 
-3. **Configure backend URL**
-   - Open `lib/core/constants/app_constants.dart`
-   - Update `baseUrl` and `imageBaseUrl` with your backend server address
-   - Example: `http://YOUR_IP:8000`
+3. **Konfigurasi URL backend**
+   - Buka `lib/core/constants/app_constants.dart`
+   - Update `baseUrl` dan `imageBaseUrl` dengan alamat server backend Anda
+   - Contoh: `http://YOUR_IP:8000`
 
-4. **Run the application**
+4. **Jalankan aplikasi**
    
-   For Android:
+   Untuk Android:
    ```bash
    flutter run
    ```
    
-   For Web:
+   Untuk Web:
    ```bash
    flutter run -d chrome
    ```
 
-### Backend Setup Notes
-- Ensure the backend REST API is running and accessible
-- Backend should support endpoints for:
-  - User authentication (`/auth/login`, `/auth/register`)
-  - Outfit CRUD operations (`/outfits/`, `/outfits/{id}`)
-  - Favorites management (`/outfits/{id}/favorite`)
-  - Image file uploads
-- Configure CORS if running web version
+### Catatan Setup Backend
+- Pastikan backend REST API berjalan dan dapat diakses
+- Backend harus mendukung endpoint untuk:
+  - Autentikasi pengguna (`/auth/login`, `/auth/register`)
+  - Operasi CRUD outfit (`/outfits/`, `/outfits/{id}`)
+  - Manajemen favorit (`/outfits/{id}/favorite`)
+  - Upload file gambar
+- Konfigurasi CORS jika menjalankan versi web
 
-## Learning Outcomes
+## Hasil Pembelajaran
 
-This project demonstrates practical implementation of:
+Proyek ini mendemonstrasikan implementasi praktis dari:
 
-1. **Mobile Development Fundamentals**
-   - Cross-platform development with Flutter
-   - Material Design principles
-   - Platform-specific features (camera, file access)
+1. **Fundamental Pengembangan Mobile**
+   - Pengembangan cross-platform dengan Flutter
+   - Prinsip Material Design
+   - Fitur spesifik platform (kamera, akses file)
 
 2. **State Management**
-   - Provider pattern implementation
+   - Implementasi pola Provider
    - Separation of concerns
-   - Efficient state updates
+   - Update state yang efisien
 
-3. **API Integration**
-   - RESTful API consumption
-   - Authentication flows
+3. **Integrasi API**
+   - Konsumsi RESTful API
+   - Alur autentikasi
    - Multipart file uploads
-   - Error handling strategies
+   - Strategi penanganan error
 
-4. **Advanced UI/UX**
-   - Gesture-based interactions
-   - Drag and drop interfaces
-   - Multi-touch transformations
-   - Expandable/collapsible components
-   - Image handling with transparency
+4. **UI/UX Lanjutan**
+   - Interaksi berbasis gesture
+   - Antarmuka drag and drop
+   - Transformasi multi-touch
+   - Komponen expandable/collapsible
+   - Penanganan gambar dengan transparansi
 
-5. **Software Architecture**
-   - Clean architecture principles
-   - Repository pattern
-   - Provider-based dependency injection
-   - Feature-based project structure
+5. **Arsitektur Software**
+   - Prinsip clean architecture
+   - Pola repository
+   - Dependency injection berbasis Provider
+   - Struktur proyek berbasis fitur
 
-## Project Structure
+## Struktur Proyek
 
 ```
 lib/
-├── core/                       # Core utilities and constants
-│   ├── constants/             # App-wide constants
-│   ├── utils/                 # Helper functions and routing
-│   └── widgets/               # Shared widgets
-├── features/                  # Feature modules
-│   ├── auth/                  # Authentication
+├── core/                       # Utilitas dan konstanta inti
+│   ├── constants/             # Konstanta aplikasi-wide
+│   ├── utils/                 # Fungsi helper dan routing
+│   └── widgets/               # Widget bersama
+├── features/                  # Modul fitur
+│   ├── auth/                  # Autentikasi
 │   │   ├── data/             # Auth data layer
 │   │   ├── domain/           # Auth domain layer
 │   │   └── presentation/     # Auth UI
-│   ├── wardrobe/             # Outfit management
+│   ├── wardrobe/             # Manajemen outfit
 │   │   ├── data/            # Data sources, repositories
 │   │   ├── domain/          # Entities, repository interfaces
-│   │   └── presentation/    # UI screens and providers
+│   │   └── presentation/    # Layar UI dan providers
 │   └── mix_match/           # Avatar outfit builder
 │       ├── data/
 │       ├── domain/
 │       └── presentation/
-└── main.dart                 # Application entry point
+└── main.dart                 # Entry point aplikasi
 ```
 
-## Known Limitations
+## Keterbatasan yang Diketahui
 
-- Saved combinations currently store basic metadata (implementation can be extended)
-- Web version has limited gesture support compared to mobile
-- Image processing is client-side (no backend image optimization)
-- Background removal requires external tool integration
+- Kombinasi yang disimpan saat ini menyimpan metadata dasar (implementasi dapat diperluas)
+- Versi web memiliki dukungan gesture terbatas dibanding mobile
+- Pemrosesan gambar di sisi client (tidak ada optimasi gambar backend)
+- Penghapusan latar belakang memerlukan integrasi tool eksternal
 
-## Future Enhancements
+## Peningkatan di Masa Depan
 
-Potential improvements for continued development:
-- Cloud storage integration for images
-- Social sharing of outfit combinations
-- AI-based outfit recommendations
-- Weather-based outfit suggestions
-- Calendar integration for outfit planning
-- Export combinations as images
+Potensi peningkatan untuk pengembangan lanjutan:
+- Integrasi cloud storage untuk gambar
+- Sharing sosial untuk kombinasi outfit
+- Rekomendasi outfit berbasis AI
+- Saran outfit berbasis cuaca
+- Integrasi kalender untuk perencanaan outfit
+- Export kombinasi sebagai gambar
 
-## Assignment Notes
+## Catatan Tugas
 
-**Course**: Mobile Development  
-**Purpose**: Final Assignment  
-**Focus Areas**:
-- Mobile application development with Flutter
-- Integration with REST APIs
-- State management in mobile apps
-- Gesture-based user interfaces
-- Media handling (camera and gallery)
-- Cross-platform considerations
+**Mata Kuliah**: Pengembangan Aplikasi Bergerak  
+**Tujuan**: Tugas Akhir  
+**Area Fokus**:
+- Pengembangan aplikasi mobile dengan Flutter
+- Integrasi dengan REST APIs
+- State management dalam aplikasi mobile
+- Antarmuka pengguna berbasis gesture
+- Penanganan media (kamera dan galeri)
+- Pertimbangan cross-platform
 
-This project showcases the integration of multiple mobile development concepts into a cohesive, user-friendly application that solves a real-world problem of wardrobe organization and outfit planning.
+Proyek ini menampilkan integrasi berbagai konsep pengembangan mobile ke dalam aplikasi yang kohesif dan user-friendly yang menyelesaikan masalah nyata dalam organisasi lemari pakaian dan perencanaan outfit.
 
-## License
+## Lisensi
 
-This project is developed for educational purposes
+Proyek ini dikembangkan untuk tujuan edukasi sebagai bagian dari tugas mata kuliah universitas.
