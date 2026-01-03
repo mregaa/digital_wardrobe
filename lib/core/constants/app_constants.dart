@@ -1,7 +1,7 @@
 class AppConstants {
   // API Configuration
-  static const String baseUrl = 'http://localhost:8000/api/v1';
-  static const String imageBaseUrl = 'http://localhost:8000';
+  static const String baseUrl = 'http://192.168.1.99:8000/api/v1';
+  static const String imageBaseUrl = 'http://192.168.1.99:8000';
   
   // API Endpoints
   static const String loginEndpoint = '/auth/login';
